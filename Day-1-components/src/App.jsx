@@ -17,10 +17,7 @@ const HomePage = () => {
         >
           Day 1 of mastering React Components
         </h1>
-        <p
-          className="text-sm sm:text-base md:text-lg
-"
-        >
+        <p className="text-sm sm:text-base md:text-lg">
           Not just learning syntax — understanding WHY components exist, how
           React thinks, and how reusable UI is built.
         </p>
@@ -33,7 +30,7 @@ const HomePage = () => {
           Think of it like a Lego block — you build small blocks and combine
           them into bigger structures. Every React app is made of components.
           <br />
-          <strong>“Component = chhota block jo milke app banata hai.”</strong>
+          <strong>“Component = Chhota block jo milke app banata hai.”</strong>
         </p>
         <hr />
         <p className="text-center text-sm sm:text-base md:text-lg">
