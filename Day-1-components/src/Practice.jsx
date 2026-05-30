@@ -8,7 +8,7 @@ const Practice = () => {
       <Header />
       <Body />
       <br/>
-      <footer className="fixed bottom-0 left-0 w-full flex justify-center items-center p-4 border-1 bg-gray-100 ">
+      <footer className="fixed bottom-0 left-0 w-full flex justify-center items-center p-4 border bg-gray-100 ">
         <Footer />
       </footer>
     </>

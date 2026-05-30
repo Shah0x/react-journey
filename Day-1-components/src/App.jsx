@@ -12,7 +12,7 @@ const HomePage = () => {
 "
       >
         <h1
-          className="text-3xl text-black font-medium text-center p-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl
+          className=" text-black font-medium text-center p-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl
  "
         >
           Day 1 of mastering React Components
@@ -82,7 +82,7 @@ const HomePage = () => {
           </p>
         </div>
         <br />
-        <footer className="fixed bottom-0 left-0 w-full flex justify-center items-center p-4 border-1 bg-amber-100">
+        <footer className="fixed bottom-0 left-0 w-full flex justify-center items-center p-4 border bg-amber-100">
           <Footer />
         </footer>
       </div>
