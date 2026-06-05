@@ -23,7 +23,6 @@ const HomePage = () => {
           <strong>
             Props = read-only properties that are shared between components. A
             parents components can send data to a child components
-            {/* <component key=value /> */}
           </strong>
         </p>
         <hr />
