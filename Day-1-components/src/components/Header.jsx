@@ -19,7 +19,7 @@ const Header = () => {
              after:content-[''] after:absolute after:left-0 after:bottom-0 
              after:w-0 after:bg-gray-500 
              hover:after:w-full after:transition-all after:duration-500"
-            href="/"
+            href="/"h
           >
             ABOUT
           </a>
@@ -29,7 +29,7 @@ const Header = () => {
              after:w-0  after:bg-gray-500 
              hover:after:w-full after:transition-all after:duration-500"
             href="/"
-          >
+          > 
             SERVICE
           </a>
           <a
