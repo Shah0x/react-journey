@@ -2,8 +2,10 @@ import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Card from "./components/Card";
 import Greeting from "./components/Greeting";
 import Student from "./components/Student";
+import ProfileCardApp from "./pages/ProfileCardApp";
+import ResuableButton from "./pages/ResuableButton";
 import StudentListApp from "./pages/StudentListApp";
-import { element } from "prop-types";
+import ToDoListApp from "./pages/ToDoListApp";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -23,6 +25,7 @@ const HomePage = () => {
           <strong>
             Props = read-only properties that are shared between components. A
             parents components can send data to a child components
+            {/* <component key=value /> */}
           </strong>
         </p>
         <hr />
@@ -126,7 +129,10 @@ const HomePage = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-lg p-5 hover:shadow-lg transition">
-              <button className="bg-green-600 text-white font-semibold px-4 py-2 rounded-md mb-2 hover:bg-green-700">
+              <button
+                onClick={() => navigate("/profilecardapp")}
+                className="bg-green-600 text-white font-semibold px-4 py-2 rounded-md mb-2 hover:bg-green-700"
+              >
                 Profile Card App
               </button>
               <p className="text-gray-700">
@@ -135,7 +141,10 @@ const HomePage = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-lg p-5 hover:shadow-lg transition">
-              <button className="bg-purple-600 text-white font-semibold px-4 py-2 rounded-md mb-2 hover:bg-purple-700">
+              <button
+                onClick={() => navigate("/todolistapp")}
+                className="bg-purple-600 text-white font-semibold px-4 py-2 rounded-md mb-2 hover:bg-purple-700"
+              >
                 Todo List App
               </button>
               <p className="text-gray-700">
@@ -144,7 +153,10 @@ const HomePage = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-lg p-5 hover:shadow-lg transition">
-              <button className="bg-pink-600 text-white font-semibold px-4 py-2 rounded-md mb-2 hover:bg-pink-700">
+              <button
+                onClick={() => navigate("/resuable-button")}
+                className="bg-pink-600 text-white font-semibold px-4 py-2 rounded-md mb-2 hover:bg-pink-700"
+              >
                 Reusable Button Component
               </button>
               <p className="text-gray-700">Pass props for label and color.</p>
@@ -162,6 +174,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/studentlistapp" element={<StudentListApp />} />
+        <Route path="/profilecardapp" element={<ProfileCardApp />} />
+        <Route path="/todolistapp" element={<ToDoListApp />} />
+        <Route path="/resuable-button" element={<ResuableButton />} />
       </Routes>
     </BrowserRouter>
   );
